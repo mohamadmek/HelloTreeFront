@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Menu from '../../components/Menu/Menu';
 import Slider from '../../components/Slider/Slider';
 import Card from '../../components/Cards/Card';
 import Line from '../../components/Line/Line';
@@ -9,6 +10,7 @@ import Footer from '../../components/Footer/Footer';
    const [title] = useState(['we care for your safety', 'about us', 'testimonials']);
  return (
   <div>
+    <Menu />
     <Slider title={title} />
     <Card  />
     <Line />
