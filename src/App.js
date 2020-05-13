@@ -6,6 +6,7 @@ import { ThemeProvider, createGlobalStyle } from 'styled-components';
 const theme = {
   deepRed: '#7A072A',
   grey: '#707070',
+  lightGrey: '#AFAFAF',
   cardTextColor: '#808080',
   white: '#FFFFFE',
   blackGrey: '#34373C',
