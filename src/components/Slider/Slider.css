@@ -1,0 +1,23 @@
+.carousel-indicators {
+ justify-content: flex-end;
+ margin-right: 5%;
+ transform:rotate(90deg);
+ position: absolute;
+ right: 0;
+ left: 1000px;
+ bottom: 220px;
+}
+
+.carousel-indicators li {
+ width: 10px;
+ height: 10px;
+ border-radius: 50%;
+ margin-right: 4px;
+ margin-left: 4px;
+ border: 1px solid white;
+ background: transparent;
+}
+
+.carousel-indicators .active{
+ background: white;
+}
