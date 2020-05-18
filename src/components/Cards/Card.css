@@ -1,8 +1,55 @@
 .middleCard {
  box-shadow: 0px 0px 0px 1px rgba(128,128,128,0.4);
+ /* box-shadow: 0px 0px 0px 3px #C9C9C9; */
  margin-top: -30px;
  margin-bottom: -10px;
- background: #fff;
  padding-top: 30px;
  padding-bottom: 30px;
+ border-right: 1px solid rgba(128,128,128,0.4); 
+
+  animation: fadeIn 1.5s linear;
+  @keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+}
+
+
+
+.myNewCardCarousel .carousel-indicators {
+  justify-content: center;
+  margin-left: 70px;
+  bottom: 2rem;
+ }
+
+ @media all and (max-width: 769px) {
+  .myNewCardCarousel .carousel-indicators {
+    margin-left: 30px;
+    bottom: -39rem;
+   }
+ }
+ 
+ .myNewCardCarousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+  margin-left: 4px;
+  border: 1px solid white;
+  background: transparent;
+ }
+ 
+ .myNewCardCarousel .carousel-indicators .active{
+  background: white;
+ }
+
+@media all and (max-width: 840px) {
+ .middleCard {
+  flex-direction: row;
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 2rem;
+  margin: 0;
+  padding-top: 0;
+ } 
 }

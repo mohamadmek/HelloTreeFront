@@ -17,6 +17,31 @@ const FooterContainer = styled.div`
    width: 25%;
    padding: 0 20px;
   }
+  @media all and (max-width: 1000px) {
+    .footerColumn {
+   width: 50%;
+   padding: 0 20px;
+  }
+    .m_quick {
+      margin-top: 30px;
+    }
+  }
+  @media all and (max-width: 600px) {
+    .footerColumn {
+   width: 100%;
+   padding: 0 20px;
+  }
+    .m_quick {
+      margin-top: 50px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    .m_m_quick{
+      margin-top: 280px;
+    }
+  }
   .footerColumnTitle {
    color: ${props => props.theme.white};
    text-transform: uppercase;
@@ -67,10 +92,15 @@ const FooterContainer = styled.div`
    border: none;
    padding: 3px;
    border-radius: 3px;
+   color: black;
+   font-weight: bold;
   }
   textarea {
     background: ${props => props.theme.lightGrey};
     color: ${props => props.theme.lightGrey};
+    color: black;
+   font-weight: bold;
+   border-radius: 3px;
   }
   .mt-15 {
     margin-top: 15px;
@@ -120,13 +150,13 @@ const LastFooter = styled.div`
         </div>
      </div>
 
-     <div className='footerColumn'>
+     <div className='footerColumn m_quick'>
        <div className='footerMap'>
         <Map />
        </div>
      </div>
 
-     <div className='footerColumn'>
+     <div className='footerColumn m_quick m_m_quick'>
        <div className='footerColumnTitle'>quick links</div>
        <div className='quickLink'>.PPE Personal Protective Equipments</div>
        <div className='quickLink'>. Power Tools Professional & Personal</div>
@@ -134,7 +164,7 @@ const LastFooter = styled.div`
        <div className='quickLink'>.Machineries & Generators</div>
      </div>
 
-     <div className='footerColumn'>
+     <div className='footerColumn m_quick'>
        <div className='footerColumnTitle'>get a free quote</div>
        <form>
         <label htmlFor='name'>
@@ -147,7 +177,6 @@ const LastFooter = styled.div`
 
         </textarea>
         <button className='send'>SEND</button>
-        
        </form>
      </div>
     </div>

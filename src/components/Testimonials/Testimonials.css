@@ -1,0 +1,34 @@
+.myNewCarousel .carousel-indicators {
+ justify-content: flex-start;
+ margin-left: 0;
+ bottom: 10rem;
+}
+
+.myNewCarousel .carousel-indicators li {
+ width: 10px;
+ height: 10px;
+ border-radius: 50%;
+ margin-right: 4px;
+ margin-left: 4px;
+ border: 1px solid white;
+ background: transparent;
+}
+
+.myNewCarousel .carousel-indicators .active{
+ background: white;
+}
+@media all and (max-width: 1075px) {
+ .title {
+  left: -80px !important;
+ }
+}
+@media all and (max-width: 1133px) {
+ .myNewCarousel .carousel-indicators {
+  bottom: 60px;
+ }
+}
+@media all and (max-width: 878px) {
+ .myNewCarousel .carousel-indicators {
+  bottom: 40px;
+ }
+}

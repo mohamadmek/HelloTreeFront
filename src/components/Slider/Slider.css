@@ -1,4 +1,4 @@
-.carousel-indicators {
+.myCarousel .carousel-indicators {
  justify-content: flex-end;
  margin-right: 5%;
  transform:rotate(90deg);
@@ -8,7 +8,7 @@
  bottom: 220px;
 }
 
-.carousel-indicators li {
+.myCarousel .carousel-indicators li {
  width: 10px;
  height: 10px;
  border-radius: 50%;
@@ -18,6 +18,71 @@
  background: transparent;
 }
 
-.carousel-indicators .active{
+.myCarousel .carousel-indicators .active{
  background: white;
 }
+
+@media all and (max-width: 1315px) {
+ .myCarousel .carousel-indicators {
+  left: 900px;
+  bottom: 190px;
+ }
+
+}
+@media all and (max-width: 1195px) {
+ .myCarousel .carousel-indicators {
+  left: 800px;
+  bottom: 240px;
+ }
+}
+ @media all and (max-width: 1086px) {
+  .myCarousel .carousel-indicators {
+   left: 700px;
+   bottom: 240px;
+  }
+}
+
+@media all and (max-width: 950px) {
+ .myCarousel .carousel-indicators {
+  left: 600px;
+  bottom: 240px;
+ }
+}
+
+@media all and (max-width: 813px) {
+ .myCarousel .carousel-indicators {
+  left: 500px;
+  bottom: 240px;
+ }
+}
+
+@media all and (max-width: 700px) {
+ .myCarousel .carousel-indicators {
+  position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: -50px;
+    justify-content: center;
+    transform:rotate(0deg);
+ }
+ .carouselText,.carouselImage {
+  width: 100% !important;
+ }
+ .carouselImage > img {
+  display: none;
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: contain;
+}
+}
+
+@media all and (max-width: 376px) {
+  .myCarousel .carousel-indicators {
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+      left: -50px;
+      justify-content: center;
+      transform:rotate(0deg);
+   }
+ }

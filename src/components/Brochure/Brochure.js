@@ -6,8 +6,10 @@ const BrochureRow = styled.div`
  border-bottom: 1px solid white;
  padding-bottom: 4rem;
  margin-bottom: 40px;
+ flex-wrap: wrap;
 .brochureName {
- display: flex;
+  display: flex;
+ width: 70%;
 }
 .brochureName i {
  color: ${props => props.theme.white};
@@ -32,22 +34,38 @@ button {
  color: #fff;
  padding: 0 30px;
  height: 32px;
+ margin: 0 auto;
  margin-top: 25px;
+}
+@media all and (max-width: 500px) {
+  .brochureName {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .brochureText {
+    max-width: 100%;
+   
+  }
+  .brochureDescription {
+    margin-left: 0 !important;
+  }
 }
 `;
 
- const Brochure = () => {
+ const Brochure = ({brochure}) => {
  return (
-  
   <BrochureRow>
    <div className='brochureName'>
    <i className="fas fa-book-open"></i>
      <div className='brochureDescription'>
       <div className='brochureHeader'>
-        brochure
+        {brochure.title}
       </div>
       <div className='brochureText'>
-      Ut wisi enim ad minim veniam,ea commodo consequat.
+      {brochure.text}
       </div>
      </div>
    </div>

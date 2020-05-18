@@ -1,0 +1,10 @@
+@media all and (max-width: 1075px) {
+ .title {
+  left: -75px ;
+ }
+}
+@media all and (max-width: 769px) {
+ .title {
+  left: 40px ;
+ }
+}
