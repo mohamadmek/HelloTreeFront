@@ -70,7 +70,7 @@ const Testimonial = ({testimonial}) => {
           </div>
         </div>
         <div className='testimonialColumn' style={{textAlign: 'right'}}>
-          <img src={`http://localhost:8000/storage/images/${testimonial.image}`} alt='testimonial' />
+          <img src={`http://localhost:8000/images/${testimonial.image}`} alt='testimonial' />
         </div>
       </TestimonialFlex>
  )

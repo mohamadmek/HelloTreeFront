@@ -58,7 +58,7 @@ const Button = styled.button`
   
     <CarouselContainer>
       <div className='carouselImage'>
-        <img src={`http://localhost:8000/storage/images/${slide.image}`} alt='carouselImage' />
+        <img src={`http://localhost:8000/images/${slide.image}`} alt='carouselImage' />
       </div>
       <div className='carouselText'>
         <div className='carouselTextHeader'>
